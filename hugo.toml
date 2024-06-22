@@ -1,4 +1,30 @@
-baseURL = 'https://kjhickman.github.io/'
+baseURL = 'https://kylehickman.net/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'kylehickman.net'
+enableRobotsTXT = true
+
 theme = 'gokarna'
+pygmentsStyle = "nord"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    pre = "<span data-feather='book'></span>"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    pre = "<span data-feather='tag'></span>"
+    weight = 2
+    
+  [[menu.main]]
+    identifier = "github"
+    url = "https://github.com/kjhickman"
+    pre = "<span data-feather='github'></span>"
+    weight = 3
+    [menu.main.params]
+        newPage = true
